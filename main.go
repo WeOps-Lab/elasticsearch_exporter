@@ -180,6 +180,8 @@ func main() {
 
 	// version metric
 	prometheus.MustRegister(version.NewCollector(name))
+	// Remove Go collector
+	prometheus.Unregister(prometheus.NewGoCollector())
 
 	// create the exporter
 	exporter, err := collector.NewElasticsearchCollector(
