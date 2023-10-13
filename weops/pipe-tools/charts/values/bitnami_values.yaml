@@ -1,0 +1,33 @@
+commonLabels:
+  object: elasticsearch
+
+security:
+  elasticPassword: Weops@123
+
+master:
+  persistence:
+    enabled: false
+  readinessProbe:
+    enabled: false
+  livenessProbe:
+    enabled: false
+
+data:
+  persistence:
+    enabled: false
+  readinessProbe:
+    enabled: false
+  livenessProbe:
+    enabled: false
+
+coordinating:
+  readinessProbe:
+    enabled: false
+  livenessProbe:
+    enabled: false
+
+ingest:
+  readinessProbe:
+    enabled: false
+  livenessProbe:
+    enabled: false
