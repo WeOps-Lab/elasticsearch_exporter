@@ -72,14 +72,9 @@ spec:
           - --es.data_stream
           - --collector.clustersettings
           - --collector.snapshots
-          - --es.uri=https://elasticsearch-{{VERSION}}.elasticsearch:9200
+          - --es.uri=http://elasticsearch-{{VERSION}}.elasticsearch:9200
           - --es.clusterinfo.interval=1m
           - --es.timeout=5s
-        env:
-          - name: ES_USERNAME
-            value: elastic
-          - name: ES_PASSWORD
-            value: Weops@123
         resources:
           requests:
             cpu: 100m

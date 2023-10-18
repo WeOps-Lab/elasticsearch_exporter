@@ -13,9 +13,7 @@ for version in "${object_versions[@]}"; do
     helm install $object-$version_suffix --namespace $object -f ./values/bitnami_values.yaml ./$object \
     --set image.tag=$version \
     --set commonLabels.object_version=$version_suffix \
-    --set service.type='NodePort' \
     --set service.nodePorts.restAPI=$port
-
     ((port++))
     sleep 1
 done
@@ -27,4 +25,6 @@ helm install es-v6-8 --namespace elasticsearch  --version 6.8.12 \
  --set imageTag=6.8.12 \
  --set service.nodePort="$port" \
  --set service.type=NodePort \
+ --set masterService=elasticsearch-v6-8 \
+ --set secret.password='Weops@123' \
  elastic/elasticsearch
