@@ -64,7 +64,6 @@ spec:
         args:
           - --es.uri=http://elasticsearch-{{VERSION}}:9200
           - --es.all
-          - --es.cluster_settings
           - --es.shards
           - --es.snapshots
           - --es.timeout=5s
