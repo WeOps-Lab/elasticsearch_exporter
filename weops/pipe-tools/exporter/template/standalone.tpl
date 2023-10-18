@@ -56,7 +56,7 @@ spec:
       shareProcessNamespace: true
       containers:
       - name: es-exporter-standalone-{{VERSION}}
-        image: registry-svc:25000/library/es-exporter-standalone:latest
+        image: registry-svc:25000/library/elasticsearch-exporter:latest
         imagePullPolicy: Always
         securityContext:
           allowPrivilegeEscalation: false
