@@ -8,5 +8,5 @@ COPY elasticsearch_exporter_linux_amd64 /elasticsearch_exporter_linux_amd64
 
 RUN chmod +x /elasticsearch_exporter_linux_amd64
 
-EXPOSE     9308
+EXPOSE     9114
 ENTRYPOINT [ "/elasticsearch_exporter_linux_amd64" ]
