@@ -77,7 +77,7 @@ spec:
           - --es.timeout=5s
         env:
           - name: ES_USERNAME
-            value: elastic
+            value: weops
           - name: ES_PASSWORD
             value: Weops@123
         resources:
