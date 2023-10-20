@@ -1,7 +1,7 @@
 kind: Schedule
 apiVersion: chaos-mesh.org/v1alpha1
 metadata:
-  namespace: es
+  namespace: elasticsearch
   name: es-exporter-stress
   annotations:
     experiment.chaos-mesh.org/pause: 'false'
