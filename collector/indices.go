@@ -92,7 +92,7 @@ func NewIndices(logger log.Logger, client *http.Client, url *url.URL, shards boo
 
 	shardLabels := labels{
 		keys: func(...string) []string {
-			return []string{"index", "shard", "node", "primary", "cluster"}
+			return []string{"index", "shard_id", "node", "primary", "cluster"}
 		},
 		values: func(lastClusterinfo *clusterinfo.Response, s ...string) []string {
 			if lastClusterinfo != nil {

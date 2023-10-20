@@ -92,8 +92,8 @@ func createRoleMetric(role string) *nodeMetric {
 }
 
 var (
-	defaultNodeLabels               = []string{"cluster", "host", "name", "es_master_node", "es_data_node", "es_ingest_node", "es_client_node"}
-	defaultRoleLabels               = []string{"cluster", "host", "name"}
+	defaultNodeLabels               = []string{"cluster", "host", "node_name", "es_master_node", "es_data_node", "es_ingest_node", "es_client_node"}
+	defaultRoleLabels               = []string{"cluster", "host", "node_name"}
 	defaultThreadPoolLabels         = append(defaultNodeLabels, "type")
 	defaultBreakerLabels            = append(defaultNodeLabels, "breaker")
 	defaultFilesystemDataLabels     = append(defaultNodeLabels, "mount", "path")
