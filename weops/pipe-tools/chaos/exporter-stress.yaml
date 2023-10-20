@@ -14,7 +14,7 @@ spec:
   stressChaos:
     selector:
       namespaces:
-        - es
+        - elasticsearch
       labelSelectors:
         'pod_type': 'exporter'
     mode: all
